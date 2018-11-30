@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="poekr_toaurnment">
+    <h1>Poekr Toaurnment</h1>
+
+    <div class="container" id="selectContainer">
+        <div>
+
+            <p>Number of players
+                <input id="numberofplayerstxt" class="inputText" type="text" name="search" value="2">
+            <p>Starting stack
+                <input id="startingstacktxt" class="inputText" type="text" name="search" value="10000">
+            <p>Smallest chip denomination
+                <input id="smallestchipdenominationtxt" class="inputText" type="text" name="search" value="1">
+
+
+            <p id="result" class="inputText"></p>
+
+
+        </div>
+
+    </div>
+    <div class="container buttons" id="buttonContainer">
+        <button type="button" onclick="loadDoc()">Get poker deetz</button>
+    </div>
+</div>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.responseText);
+        console.log(data);
+
+        // document.getElementById("poekr_toaurnment").innerHTML = data.player_count + ' ' + data.small_blind;
+    }
+  };
+  xhttp.open("GET", "/api/retrieve", true);
+  xhttp.send();
+}
+
+
+// window.onload = function () {
+//     loadDoc()
+// }
+
+</script>
+
+</body>
+<style>
+    body {
+        background-color: Gainsboro;
+        color: snow;
+        justify-content: center;
+        align-items: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .inputText{
+        color:black;
+    }
+
+    h1 {
+        margin: 20px;
+        text-align: center;
+    }
+</style>
+</html>
+
+
