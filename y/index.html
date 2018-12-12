@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.7.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.7.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.7.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.7.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.7.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style>
+      body {
+        background-color: Gainsboro;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .inputText{
+        color:black;
+      }
+
+      h1 {
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+  <div id="poekr_toaurnment">
+    <h1>Poekr Toaurnment</h1>
+
+    <div class="container" id="selectContainer">
+      <div>
+        <h1 id="firebaseTest"></h1>
+        <form id="kin">
+
+          <p>Number of players
+            <input id="numberofplayerstxt" class="inputText" type="text" name="search" value="2">
+          <p>Starting stack
+            <input id="startingstacktxt" class="inputText" type="text" name="search" value="10000">
+          <p>Smallest chip denomination
+            <input id="smallestchipdenominationtxt" class="inputText" type="text" name="search" value="1">
+
+          <p id="result" class="inputText"></p>
+
+          <div class="container buttons" id="buttonContainer" onclick="googleLogin()">
+            <button type="button" onclick="init()">Get poker deetz</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyCNUgUUGLv-8aa8sIZ1m-_pzSnKmVIPFYY",
+          authDomain: "poekr-toaurnment.firebaseapp.com",
+          databaseURL: "https://poekr-toaurnment.firebaseio.com",
+          projectId: "poekr-toaurnment",
+          storageBucket: "poekr-toaurnment.appspot.com",
+          messagingSenderId: "562396815224"
+      };
+      firebase.initializeApp(config);
+
+      var firebaseTest = document.getElementById('firebaseTest');
+      var fbRef = firebase.database().ref().child('text');
+      dbRef.on('value', snap => firebaseTest.innerText = snap.val());
+
+  </script>
+    <script src="app.js"></script>
+
+  </body>
+</html>

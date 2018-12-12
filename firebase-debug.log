@@ -1,0 +1,54 @@
+[debug] [2018-12-07T10:14:36.305Z] ----------------------------------------------------------------------
+[debug] [2018-12-07T10:14:36.314Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hisg427\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-07T10:14:36.315Z] CLI Version:   6.1.2
+[debug] [2018-12-07T10:14:36.315Z] Platform:      win32
+[debug] [2018-12-07T10:14:36.315Z] Node Version:  v11.3.0
+[debug] [2018-12-07T10:14:36.316Z] Time:          Fri Dec 07 2018 10:14:36 GMT+0000 (Greenwich Mean Time)
+[debug] [2018-12-07T10:14:36.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-07T10:14:36.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-07T10:14:36.357Z] > authorizing via signed-in user
+[debug] [2018-12-07T10:14:36.359Z] [iam] checking project poekr-toaurnment for permissions ["firebase.projects.get"]
+[debug] [2018-12-07T10:14:36.364Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/poekr-toaurnment:testIamPermissions  
+
+[debug] [2018-12-07T10:14:37.396Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T10:14:37.400Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/poekr-toaurnment  
+ 
+[debug] [2018-12-07T10:14:38.135Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\hisg427\IdeaProjects\demo'...
+[info] 
+[debug] [2018-12-07T10:14:38.143Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/562396815224/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-07T10:14:38.466Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: y
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-07T10:54:24.521Z] ----------------------------------------------------------------------
+[debug] [2018-12-07T10:54:24.530Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hisg427\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2018-12-07T10:54:24.531Z] CLI Version:   6.1.2
+[debug] [2018-12-07T10:54:24.531Z] Platform:      win32
+[debug] [2018-12-07T10:54:24.531Z] Node Version:  v11.3.0
+[debug] [2018-12-07T10:54:24.533Z] Time:          Fri Dec 07 2018 10:54:24 GMT+0000 (Greenwich Mean Time)
+[debug] [2018-12-07T10:54:24.533Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-07T10:54:24.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-07T10:54:24.571Z] > authorizing via signed-in user
+[debug] [2018-12-07T10:54:24.579Z] [iam] checking project poekr-toaurnment for permissions ["firebase.projects.get"]
+[debug] [2018-12-07T10:54:24.587Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-07T10:54:24.588Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-07T10:54:25.209Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T10:54:25.225Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/poekr-toaurnment:testIamPermissions  
+
+[debug] [2018-12-07T10:54:26.108Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T10:54:26.111Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/poekr-toaurnment  
+ 
+[debug] [2018-12-07T10:54:26.888Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\hisg427\IdeaProjects\demo'...
+[info] 
+[debug] [2018-12-07T10:54:26.895Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/562396815224/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-07T10:54:27.344Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: y
+[info] +  hosting: Local server: http://localhost:5000
